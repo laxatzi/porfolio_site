@@ -1,7 +1,9 @@
 
 :root {
-   --colorMain: #222;
-
+   --color: #493333;
+   --bgColor: #EAEAEA;
+   --bgColorSec: #333333;
+   --colorDistinct: #2690D4;
 }
 
 html {
@@ -18,7 +20,7 @@ html {
 body {
   margin: 0;
   padding: 0;
-  color: var(--colorMain);
+  color: var(--color);
   background-color: #000;
   font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   font-size: 2rem;
