@@ -21,7 +21,7 @@ body {
   margin: 0;
   padding: 0;
   color: var(--color);
-  background-color: #000;
+  background-color: var(--bgColor);
   font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   font-size: 2rem;
   text-shadow: 0, 2px, 0 rgba(0,0,0, .07);
