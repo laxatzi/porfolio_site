@@ -100,9 +100,11 @@ blockquote:before {
  top: 50px;
 }
 
-.container {
+.grid {
   display: grid;
+  grid-template-columns: 1fr repeat(2, minmax(auto, 25em)) 1fr;
 }
+
 #header_section {
   min-height: 450px;  
   text-align: center;
@@ -145,7 +147,11 @@ header .hero_text {
   min-height: 450px;
   z-index: 1;
 }
-
+p.tagline {
+  margin: 0;
+  padding: 0;
+  font-style: oblique;
+}
 main > .section {
   padding-top: 35px;
   border: 1px solid red;
@@ -153,4 +159,8 @@ main > .section {
 
 .section_first {
   padding: 0 200px;
+  grid-template-areas: 
+}
+.section_first h2 {
+ 
 }
