@@ -99,3 +99,15 @@ blockquote:before {
  font-size:  10rem; 
  top: 50px;
 }
+
+.container {
+  display: grid;
+}
+header {
+  border: 1px solid red;  
+  padding: 100px auto;
+  margin: 0;
+}
+header .hero_text {
+  border: 1px solid blue;
+}
