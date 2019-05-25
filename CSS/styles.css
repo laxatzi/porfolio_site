@@ -103,11 +103,15 @@ blockquote:before {
 .container {
   display: grid;
 }
-header {
+#header_section {
   border: 1px solid red;  
-  padding: 100px auto;
-  margin: 0;
+  min-height: 450px;  
+  text-align: center;
+  display: grid;
+  justify-content: center;
+  align-items: center;
 }
 header .hero_text {
   border: 1px solid blue;
+  padding: 100px 0;
 }
