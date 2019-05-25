@@ -101,8 +101,7 @@ blockquote:before {
 }
 
 .grid {
-  display: grid;
-  grid-template-columns: 1fr repeat(2, minmax(auto, 25em)) 1fr;
+
 }
 
 #header_section {
@@ -158,9 +157,18 @@ main > .section {
 }
 
 .section_first {
-  padding: 0 200px;
-  grid-template-areas: 
+  display: grid;
+  grid-template-columns: 1fr repeat(2, minmax(auto, 25em)) 1fr;
+  grid-template-rows: 70px auto;
+  grid-template-areas: "heading" "heading" 
+                       "text" "text" ;
+  grid-gap: 1em;
 }
 .section_first h2 {
- 
+  grid-area: heading;
+  grid-column: 2/4;
+}
+.section_first p {
+  grid-area: text;
+  grid-column: 2/4;
 }
