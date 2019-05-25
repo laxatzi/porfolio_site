@@ -110,8 +110,19 @@ blockquote:before {
   display: grid;
   justify-content: center;
   align-items: center;
+  background-image: url(../img/visualStudio.jpg);
 }
 header .hero_text {
   border: 1px solid blue;
   padding: 100px 0;
+  color: var(--bgColor);
+}
+.btn {
+  background: var(--bgColorSec);
+  color: var(--bgColor);
+  border: 1px solid var(--bgColor);
+  font-size: 100%;
+  font-weight: bold;
+  padding: 20px 4rem;
+  margin-top: 20px;
 }
