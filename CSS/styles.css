@@ -44,7 +44,7 @@ p {
   line-height: 1.45;
   margin-bottom: 3.5rem;
   text-align: center; 
-  font-weight: 300;
+  font-weight: 500;
   font-size: 1.8rem;
 }
 p:last-of-type {
@@ -104,7 +104,6 @@ blockquote:before {
   display: grid;
 }
 #header_section {
-  border: 5px solid red;  
   min-height: 450px;  
   text-align: center;
   display: grid;
@@ -114,7 +113,6 @@ blockquote:before {
   position: relative;
 }
 header .hero_text {
-  border: 1px solid white;
   padding: 100px 0;
   color: var(--bgColor);
   z-index: 2;
@@ -146,4 +144,13 @@ header .hero_text {
   max-width: 100%;
   min-height: 450px;
   z-index: 1;
+}
+
+main > .section {
+  padding-top: 35px;
+  border: 1px solid red;
+}
+
+.section_first {
+  padding: 0 200px;
 }
