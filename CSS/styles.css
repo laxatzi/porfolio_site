@@ -104,7 +104,7 @@ blockquote:before {
   display: grid;
 }
 #header_section {
-  border: 1px solid red;  
+  border: 5px solid red;  
   min-height: 450px;  
   text-align: center;
   display: grid;
@@ -113,7 +113,7 @@ blockquote:before {
   background-image: url(../img/visualStudio.jpg);
 }
 header .hero_text {
-  border: 1px solid blue;
+  border: 1px solid white;
   padding: 100px 0;
   color: var(--bgColor);
 }
@@ -125,4 +125,10 @@ header .hero_text {
   font-weight: bold;
   padding: 20px 4rem;
   margin-top: 20px;
+}
+.btn:hover,
+.btn:focus {
+  background: var(--bgColor);
+  border-color: var(--bgColorSec);
+  color: var(--bgColorSec);
 }
