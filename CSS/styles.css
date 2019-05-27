@@ -316,8 +316,8 @@ label:last-of-type {
 }
 .submit-btn:hover,
 .submit-btn:focus {
-  color: var(--color);
-  background-color:var(--bgColor);
+  color: var(--bgColor);
+  background-color:var(--color);
 }
 span.aster {
   color: var(--surveyDanger);
