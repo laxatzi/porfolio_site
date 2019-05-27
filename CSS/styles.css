@@ -185,6 +185,7 @@ main > section {
 }
 .section_item {
   background-color: #fff;
+  color: var(--color);
   width: 20%;
   min-height: 440px;
   margin-right: 2%;
@@ -196,7 +197,20 @@ main > section {
   margin-right: 0;
 }
 
-
+footer {
+  min-height: 50px;
+  display: flex;
+  align-items: center;
+}
+footer .copy {
+  font-size: 1.25rem;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+}
+.copy span {
+  margin-left: 5px;
+}
 @media screen and (max-width: 975px) {
   .section_item {
     width: 50%;
