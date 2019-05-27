@@ -150,23 +150,28 @@ main > .section {
 
 .section_first {
   display: grid;
-  grid-template-columns: 1fr repeat(2, minmax(auto, 25em)) 1fr;
+  grid-template-columns: 1fr 3fr 1fr;
   grid-template-rows: 20px auto;
-  grid-template-areas: "heading" "heading" 
-                       "text" "text" ;
+  grid-template-areas: "heading" 
+                       "text" ;
   grid-gap: 1em;
 }
 .section_first h2 {
   grid-area: heading;
-  grid-column: 2/4;
+  grid-column: 2/ span 1;
 }
 .section_first p {
   grid-area: text;
-  grid-column: 2/4;
+  grid-column: 2/span 1;
 }
 .section_second {
   background-color: #333;
+  display: grid;
+  grid-template-columns: 1fr repeat(3, 300px) 1fr;
+  grid-template-areas: "item item item"
 }
 .section_item {
   background-color: #fff;
+  grid-column: 2 /span 1;
+  grid-area: item;
 }
