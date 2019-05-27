@@ -41,14 +41,10 @@ h6 {
   padding: 0;
 }
 p {
-  line-height: 1.45;
-  margin-bottom: 3.5rem;
+  line-height: 1.55;
   text-align: center; 
   font-weight: 500;
   font-size: 1.8rem;
-}
-p:last-of-type {
- margin-bottom: 0;
 }
 
 small {
@@ -100,10 +96,6 @@ blockquote:before {
  top: 50px;
 }
 
-.grid {
-
-}
-
 #header_section {
   min-height: 450px;  
   text-align: center;
@@ -140,7 +132,8 @@ header .hero_text {
   left: 0;
   bottom: 0;
   right: 0;
-  background-color: rgba(0,0,0, .7);
+  background-color: #222;
+  opacity: .8;
   width: 100%;
   max-width: 100%;
   min-height: 450px;
@@ -153,13 +146,12 @@ p.tagline {
 }
 main > .section {
   padding-top: 35px;
-  border: 1px solid red;
 }
 
 .section_first {
   display: grid;
   grid-template-columns: 1fr repeat(2, minmax(auto, 25em)) 1fr;
-  grid-template-rows: 70px auto;
+  grid-template-rows: 20px auto;
   grid-template-areas: "heading" "heading" 
                        "text" "text" ;
   grid-gap: 1em;
