@@ -156,7 +156,7 @@ main > section {
   grid-template-columns: 1fr 3fr 1fr;
 }
 .section {
- grid-template-rows: 20px auto;
+ grid-template-rows: auto auto;
   grid-template-areas: "heading" 
                        "text" ;
   grid-gap: 1em;
@@ -173,6 +173,7 @@ main > section {
   grid-area: text;
   grid-column: 2/span 1;
 }
+
 .section_second {
   grid-template-areas: item_wrapper;
 }
@@ -213,6 +214,137 @@ footer .copy {
 
 .copy span {
   margin-left: 5px;
+}
+.section_contact {
+  display: grid;
+  grid-template-columns: 1fr 3fr 1fr;
+    grid-template-areas: "heading"
+                          "form"
+                          "text";
+    grid-template-rows: auto auto auto;
+
+}
+.section_contact h2 {
+  grid-area: heading;
+  grid-column: 2/span 1;
+}
+.section_contact p {
+  grid-area: text;
+  grid-column: 2/span 1;
+}
+.section_contact .section_form{
+  grid-area: form;
+  grid-column: 2/ span 1;
+}
+.section_form {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-item {
+  display: flex;
+  padding: .5rem 0;
+}
+.form-item p {
+  font-weight: bold;
+}
+.form-item__first,
+.form-item__second {
+  flex: 1;
+  display: flex;
+}
+ .form-item__first  {
+   justify-content: flex-end;
+   align-items: center;
+   padding: 1rem 3rem;
+ }
+
+.form-item__second {
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5rem;
+  flex-direction: column;
+  display: flex;
+}
+
+textarea,
+input,
+select {
+  border: 1px solid var(--surveySecond);
+  border-radius: 5px;
+  padding: .5rem 1rem;
+  width: 80%;
+  
+}
+input[type="submit"] {
+  width: 20%;
+}
+textarea:focus,
+input:focus,
+select:focus,
+textarea:active,
+input:active,
+select:active {
+  border: 2px solid var(--surveyDanger);
+}
+label {
+  margin-bottom: 1rem;
+  
+}
+label:last-of-type {
+  margin-bottom: 0;
+}
+.fine {
+  color: var(--surveyDanger);
+  font-size: 70%;
+  padding: .5rem 1.5rem;
+  text-align: center;
+}
+
+.submit-btn {
+  color: var(--surveyBgMain);
+  background-color: var(--surveyDistinct);
+  font-size: 100%;
+  padding: 1.5rem;
+  display: block;
+  margin: 0 auto;
+}
+
+span.aster {
+  color: var(--surveyDanger);
+}
+.fine .aster {
+  font-size: 2rem;
+  font-weight: 900;
+}
+
+.checkbox-section,
+.radio-section {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+.checkbox-section input,
+.radio-section input {
+  flex: 1;
+  padding: 0;
+  margin: 0;
+}
+.checkbox-section label,
+.radio-section label {
+  flex: 4;
+  padding: 0;
+  margin: 0 5px;
+  font-size: 100%;
+}
+.section_contact > * {
+  border: 1px solid red;
+}
+
+.section_form > * {
+  border: 1px solid green;
 }
 @media screen and (max-width: 975px) {
 
