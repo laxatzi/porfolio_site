@@ -203,7 +203,8 @@ footer {
   display: flex;
   align-items: center;
 }
-footer .copy {
+footer .copy,
+footer .designed  {
   font-size: 1.25rem;
   font-weight: bold;
   display: flex;
