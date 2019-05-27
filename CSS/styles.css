@@ -144,8 +144,12 @@ p.tagline {
   padding: 0;
   font-style: oblique;
 }
-main > .section {
+main > section {
   padding: 35px 0;
+}
+.alt_bgcolor {
+  background-color: var(--bgColorSec);
+  color: var(--bgColor);
 }
 .grid {
   display: grid;
@@ -170,7 +174,6 @@ main > .section {
   grid-column: 2/span 1;
 }
 .section_second {
-  background-color: #333;
   grid-template-areas: item_wrapper;
 }
 .items_wrapper {
