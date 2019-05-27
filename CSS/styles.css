@@ -164,3 +164,9 @@ main > .section {
   grid-area: text;
   grid-column: 2/4;
 }
+.section_second {
+  background-color: #333;
+}
+.section_item {
+  background-color: #fff;
+}
