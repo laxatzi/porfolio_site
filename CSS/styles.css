@@ -227,4 +227,26 @@ footer .copy {
     justify-content: center;
     width: 100%;
   }
+  .section {
+    grid-template-rows: auto auto;
+     grid-template-areas: "heading" 
+                          "text" ;
+     grid-gap: 1em;
+   }
+
+}
+
+@media screen and (max-width: 600px) {
+
+  .grid {
+    grid-template-columns: 1fr;
+  }
+  .section_item {
+    width: 80%;
+  }
+  h2 {
+    font-size: 2.3rem;
+  }
+  
+
 }
