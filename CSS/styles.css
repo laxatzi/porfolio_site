@@ -339,13 +339,7 @@ span.aster {
   margin: 0 5px;
   font-size: 100%;
 }
-.section_contact > * {
-  border: 1px solid red;
-}
 
-.section_form > * {
-  border: 1px solid green;
-}
 @media screen and (max-width: 975px) {
 
   .section_item {
