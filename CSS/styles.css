@@ -180,6 +180,7 @@ main > .section {
 .section_item {
   background-color: #fff;
   width: 20%;
+  min-height: 440px;
   margin-right: 2%;
   margin-bottom: 3rem;
   padding: 10px;
@@ -187,4 +188,15 @@ main > .section {
 
 .section_item:last-of-type {
   margin-right: 0;
+}
+
+@media screen and (max-width: 975px) {
+  .section_item {
+    width: 50%;
+  }
+  .items_wrapper {
+    flex-direction: column;
+    min-width: 330px;
+    margin-right: 0;
+  }
 }
