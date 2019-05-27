@@ -212,12 +212,19 @@ footer .copy {
   margin-left: 5px;
 }
 @media screen and (max-width: 975px) {
+
   .section_item {
     width: 50%;
+    margin-right: 0;
   }
   .items_wrapper {
     flex-direction: column;
     min-width: 330px;
-    margin-right: 0;
+  }
+  footer  .copy{
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
   }
 }
