@@ -239,7 +239,7 @@ footer .copy {
 @media screen and (max-width: 600px) {
 
   .grid {
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr 5fr 1fr;
   }
   .section_item {
     width: 80%;
@@ -247,6 +247,6 @@ footer .copy {
   h2 {
     font-size: 2.3rem;
   }
-  
+
 
 }
