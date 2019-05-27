@@ -348,7 +348,15 @@ span.aster {
   margin: 0 5px;
   font-size: 100%;
 }
-
+#survey-form-container {
+    border: 2px solid var(--color);
+    padding: 2rem;
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+}
 @media screen and (max-width: 975px) {
 
   .section_item {
