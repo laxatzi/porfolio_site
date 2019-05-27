@@ -159,11 +159,13 @@ main > .section {
                        "text" ;
   grid-gap: 1em;
 }
-.section_first h2 {
+.section_first h2,
+.section_third h2 {
   grid-area: heading;
   grid-column: 2/ span 1;
 }
-.section_first p {
+.section_first p,
+.section_third p {
   grid-area: text;
   grid-column: 2/span 1;
 }
@@ -198,6 +200,7 @@ main > .section {
                        "text" ;
   grid-gap: 1em;
 }
+.section_about
 @media screen and (max-width: 975px) {
   .section_item {
     width: 50%;
